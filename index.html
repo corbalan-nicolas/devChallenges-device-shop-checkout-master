@@ -14,7 +14,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <style>
-      body {
+      .main-container {
         background: #F3F4F6 url('resources/background-image@2x.png') top center no-repeat;
         background-size: auto 250px;
       }
@@ -22,165 +22,106 @@
 
     <title>Device Shop Checkout | devChallenges.io</title>
   </head>
-  <body class="text-[#1D1D1F] p-3 lg:p-12">
-    <!--     
-    Checkout
-    
-    3 items
-    
-    iPhone 12 Pro
-    
-    Golden
-    
-    $999.00
-    
-    x 1
-    
-    Apple Watch
-    
-    Blue
-    
-    $399.00
-    
-    iMac
-    
-    Green
-    
-    $1199.00
-    
-    Enter coupon code
-    
-    Apply Coupon
-    
-    Sub total
-    
-    $2597.00
-    
-    Tax
-    
-    $623.28
-    
-    Total
-    
-    $3220.28
-    
-    Contact Information
-    
-    First & Last name
-    
-    Enter first & last name
-    
-    Email Address
-    
-    Enter email address
-    
-    Country
-    
-    Finland
-    
-    Postal Code
-    
-    00270
-    
-    Continue
-     -->
-    <h1 class="sr-only">Apple Store</h1>
-     <header class="flex justify-center items-center gap-x-6 pb-12">
-      <div><p class="text-white font-bold text-3xl">Checkout</p></div>
-      <div><p class="text-white text-xs px-3 py-2 bg-[#1D1D1F] rounded-full uppercase leading-none">3 items</p></div>
-    </header>
-    <main class="flex flex-col lg:flex-row w-full rounded-xl overflow-hidden">
+  <body class="min-h-dvh">
+    <div class="main-container text-[#1D1D1F] p-3 lg:p-12 max-w-[1280px] mx-auto min-h-dvh">
+      <h1 class="sr-only">Apple Store</h1>
+      <header class="flex justify-center items-center gap-x-6 pb-12">
+        <div><p class="text-white font-bold text-3xl">Checkout</p></div>
+        <div><p class="text-white text-xs px-3 py-2 bg-[#1D1D1F] rounded-full uppercase leading-none">3 items</p></div>
+      </header>
+      <main class="flex flex-col lg:flex-row w-full rounded-xl overflow-hidden">
 
-      <section class="grow bg-[#E5E7EB] p-8">
-        <div class="flex flex-col gap-y-6 pb-6 border-b border-[#D2D5DA]">
-          <article class="grid grid-cols-[auto_1fr] gap-x-6">
-            <div class="grid place-content-center border bg-white w-24 p-3 rounded-xl border-[#D2D5DA] aspect-1/1">
-              <img class="block h-18" src="resources/Gold@2x.png" alt="iPhone 12 Pro Golden color">
-            </div>
-            <div class="grid grid-cols-[auto_auto] grid-rows-[auto_1fr_auto]">
-              <h2 class="font-bold">iPhone 12 Pro</h2>
-              <p class="font-bold justify-self-end">$999.00</p>
-              <p class="col-span-full">Golden</p>
-              <p>x 1</p>
-              <button class="justify-self-end"><img src="resources/close-icon.svg" alt="Eliminate"></button>
-            </div>
-          </article>
-          <article class="grid grid-cols-[auto_1fr] gap-x-6">
-            <div class="grid place-content-center border bg-white w-24 p-3 rounded-xl border-[#D2D5DA] aspect-1/1">
-              <img class="block h-18" src="resources/Apple-watchx2.png" alt="iPhone 12 Pro Golden color">
-            </div>
-            <div class="grid grid-cols-[auto_auto] grid-rows-[auto_1fr_auto]">
-              <h2 class="font-bold">Apple Watch</h2>
-              <p class="font-bold justify-self-end">$399.00</p>
-              <p class="col-span-full">Blue</p>
-              <p>x 1</p>
-              <button class="justify-self-end"><img src="resources/close-icon.svg" alt="Eliminate"></button>
-            </div>
-          </article>
-          <article class="grid grid-cols-[auto_1fr] gap-x-6">
-            <div class="grid place-content-center border bg-white w-24 p-3 rounded-xl border-[#D2D5DA] aspect-1/1">
-              <img class="block w-18" src="resources/iMac@2x.png" alt="iPhone 12 Pro Golden color">
-            </div>
-            <div class="grid grid-cols-[auto_auto] grid-rows-[auto_1fr_auto]">
-              <h2 class="font-bold">iMac</h2>
-              <p class="font-bold justify-self-end">$1199.00</p>
-              <p class="col-span-full">Green</p>
-              <p>x 1</p>
-              <button class="justify-self-end"><img src="resources/close-icon.svg" alt="Eliminate"></button>
-            </div>
-          </article>
-        </div>
-        <div class="flex flex-col gap-y-2 pt-6">
-          <div class="grid grid-cols-[1fr_auto] gap-x-3 mb-4">
-            <input class="bg-white rounded py-3 px-4 border border-[#D2D5DA]" type="text" name="couponCode" placeholder="Enter coupon code">
-            <button class="bg-[#1D1D1F] text-white rounded py-3 px-4">Apply Coupon</button>
+        <section class="grow bg-[#E5E7EB] p-8">
+          <div class="flex flex-col gap-y-6 pb-6 border-b border-[#D2D5DA]">
+            <article class="grid grid-cols-[auto_1fr] gap-x-6">
+              <div class="grid place-content-center border bg-white w-24 p-3 rounded-xl border-[#D2D5DA] aspect-1/1">
+                <img class="block h-18" src="resources/Gold@2x.png" alt="iPhone 12 Pro Golden color">
+              </div>
+              <div class="grid grid-cols-[auto_auto] grid-rows-[auto_1fr_auto]">
+                <h2 class="font-bold">iPhone 12 Pro</h2>
+                <p class="font-bold justify-self-end">$999.00</p>
+                <p class="col-span-full">Golden</p>
+                <p>x 1</p>
+                <button class="justify-self-end"><img src="resources/close-icon.svg" alt="Eliminate"></button>
+              </div>
+            </article>
+            <article class="grid grid-cols-[auto_1fr] gap-x-6">
+              <div class="grid place-content-center border bg-white w-24 p-3 rounded-xl border-[#D2D5DA] aspect-1/1">
+                <img class="block h-18" src="resources/Apple-watchx2.png" alt="iPhone 12 Pro Golden color">
+              </div>
+              <div class="grid grid-cols-[auto_auto] grid-rows-[auto_1fr_auto]">
+                <h2 class="font-bold">Apple Watch</h2>
+                <p class="font-bold justify-self-end">$399.00</p>
+                <p class="col-span-full">Blue</p>
+                <p>x 1</p>
+                <button class="justify-self-end"><img src="resources/close-icon.svg" alt="Eliminate"></button>
+              </div>
+            </article>
+            <article class="grid grid-cols-[auto_1fr] gap-x-6">
+              <div class="grid place-content-center border bg-white w-24 p-3 rounded-xl border-[#D2D5DA] aspect-1/1">
+                <img class="block w-18" src="resources/iMac@2x.png" alt="iPhone 12 Pro Golden color">
+              </div>
+              <div class="grid grid-cols-[auto_auto] grid-rows-[auto_1fr_auto]">
+                <h2 class="font-bold">iMac</h2>
+                <p class="font-bold justify-self-end">$1199.00</p>
+                <p class="col-span-full">Green</p>
+                <p>x 1</p>
+                <button class="justify-self-end"><img src="resources/close-icon.svg" alt="Eliminate"></button>
+              </div>
+            </article>
           </div>
+          <div class="flex flex-col gap-y-2 pt-6">
+            <div class="grid grid-cols-[1fr_auto] gap-x-3 mb-4">
+              <input class="bg-white rounded py-3 px-4 border border-[#D2D5DA]" type="text" name="couponCode" placeholder="Enter coupon code">
+              <button class="bg-[#1D1D1F] text-white rounded py-3 px-4">Apply Coupon</button>
+            </div>
+            
+            <div class="flex justify-between font-bold">
+              <p>Sub Total</p>
+              <p>$2597.00</p>
+            </div>
+            <div class="flex justify-between font-bold">
+              <p>Tax</p>
+              <p>$623.28</p>
+            </div>
+            <div class="flex justify-between font-bold">
+              <p>Total</p>
+              <p>$3220.28</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="grow bg-white p-6">
+          <p class="font-bold mb-6 mt-3">Contact Information</p>
           
-          <div class="flex justify-between font-bold">
-            <p>Sub Total</p>
-            <p>$2597.00</p>
-          </div>
-          <div class="flex justify-between font-bold">
-            <p>Tax</p>
-            <p>$623.28</p>
-          </div>
-          <div class="flex justify-between font-bold">
-            <p>Total</p>
-            <p>$3220.28</p>
-          </div>
-        </div>
-      </section>
+          <form class="grid grid-cols-[1fr_1fr] gap-x-6" action="#" method="post">
+            <label class="col-span-full mb-6">
+              <span class="font-semibold block mb-2">First & Last name</span>
+              <input class="block w-full px-4 py-3 rounded border border-[#D2D5DA] bg-[#E5E7EB]" type="text" name="name" placeholder="Enter first & Last name">
+            </label>
+            
+            <label class="col-span-full mb-6">
+              <span class="font-semibold block mb-2">Email Address</span>
+              <input class="block w-full px-4 py-3 rounded border border-[#D2D5DA] bg-[#E5E7EB]" type="email" name="email" placeholder="Enter email address">
+            </label>
+    
+            <label class=" mb-6">
+              <span class="font-semibold block mb-2">Country</span>
+              <select class="block w-full px-4 py-3 rounded border border-[#D2D5DA] bg-[#E5E7EB]">
+                <option value="Finland">Finland</option>
+              </select>
+            </label>
+    
+            <label class=" mb-6">
+              <span class="font-semibold block mb-2">Postal Code</span>
+              <input class="block w-full px-4 py-3 rounded border border-[#D2D5DA] bg-[#E5E7EB]" type="text" name="name" placeholder="00270">
+            </label>
+    
+            <button class="bg-[#1D1D1F] text-white rounded py-3 px-4 col-span-full">Continue</button>
+          </form>
+        </section>
 
-      <section class="grow bg-white p-6">
-        <p class="font-bold mb-6 mt-3">Contact Information</p>
-        
-        <form class="grid grid-cols-[1fr_1fr] gap-x-6" action="#" method="post">
-          <label class="col-span-full mb-6">
-            <span class="font-semibold block mb-2">First & Last name</span>
-            <input class="block w-full px-4 py-3 rounded border border-[#D2D5DA] bg-[#E5E7EB]" type="text" name="name" placeholder="Enter first & Last name">
-          </label>
-          
-          <label class="col-span-full mb-6">
-            <span class="font-semibold block mb-2">Email Address</span>
-            <input class="block w-full px-4 py-3 rounded border border-[#D2D5DA] bg-[#E5E7EB]" type="email" name="email" placeholder="Enter email address">
-          </label>
-  
-          <label class=" mb-6">
-            <span class="font-semibold block mb-2">Country</span>
-            <select class="block w-full px-4 py-3 rounded border border-[#D2D5DA] bg-[#E5E7EB]">
-              <option value="Finland">Finland</option>
-            </select>
-          </label>
-  
-          <label class=" mb-6">
-            <span class="font-semibold block mb-2">Postal Code</span>
-            <input class="block w-full px-4 py-3 rounded border border-[#D2D5DA] bg-[#E5E7EB]" type="text" name="name" placeholder="00270">
-          </label>
-  
-          <button class="bg-[#1D1D1F] text-white rounded py-3 px-4 col-span-full">Continue</button>
-        </form>
-      </section>
-
-    </main>
+      </main>
+    </div>
   </body>
 </html>
